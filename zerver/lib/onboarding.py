@@ -56,7 +56,7 @@ def send_initial_pms(user: UserProfile) -> None:
                 " " + _("We also have a guide for [Setting up your organization]({help_url}).")
             ).format(help_url=help_url)
 
-        welcome_msg = _("Hello, and welcome to Zulip!") + "👋"
+        welcome_msg = _("Hello :hello: and welcome to MakeItTogether Club!") + "👋" 
         demo_org_warning = ""
         if user.realm.demo_organization_scheduled_deletion_date is not None:
             demo_org_warning = (
@@ -72,10 +72,19 @@ def send_initial_pms(user: UserProfile) -> None:
                 welcome_msg + " ",
                 _("This is a private message from me, Welcome Bot.") + "\n\n",
                 _(
-                    "If you are new to Zulip, check out our [Getting started guide]({getting_started_url})!"
+                    ":one: First of all, read [About]({about}) to know more about us!" #Translate
                 ),
                 "{organization_setup_text}" + "\n\n",
                 "{demo_org_warning}",
+                 _(
+                    ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
+                )
+                + + "\n"
+        "\n"
+       "[](/static/images/cute/exellent_profile.png)"
+        "\n"
+        "\n",
+                 
                 _(
                     "I can also help you get set up! Just click anywhere on this message or press `r` to reply."
                 )
@@ -90,6 +99,10 @@ def send_initial_pms(user: UserProfile) -> None:
         demo_org_warning=demo_org_warning,
         demo_org_help_url="/help/demo-organizations",
         getting_started_url="/help/getting-started-with-zulip",
+        about="/policies/about",
+        privacy="/policies/privacy",
+        profile="#settings/profile",
+        
     )
 
     internal_send_private_message(
@@ -196,6 +209,89 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
                 ),
             ]
         )
+    elif human_response_lower in ["profile ok", "profile_ok"]:
+        return "".join(
+            [
+                _(":three: Good job! Next go to [newcomers channel](#narrow/stream/4-newcomers)") + "\n\n",
+                _(
+                    "Create new topic and call it with your name and write about yourself" 
+                ) + "\n\n" ,
+                _(
+                    "when you will done, send me `about ok`" 
+                )  ,
+            ]
+        )
+    elif human_response_lower in ["about ok", "about_ok"]:
+        return "".join(
+            [
+                _("You are awesome, my friend :smile:. And now you should to join to team or create your own team.") + "\n\n", 
+               
+                _(
+                    "So, if you want to join to team send me `join` and if you want to create your own team send me `create`"
+                )  ,
+            ]
+        )
+    elif human_response_lower in ["join", "join"]:
+        return "".join(
+            [
+                _("Excellent. You choose to join to team. So go to [teams channel](#narrow/stream/3-teams) and on search box write your role (list of role you can see [here](/policies/roles)) ") + "\n\n", 
+                _(
+                    "Then you get a list of teams which needs in that specialists. See description and choose team which relevant to you" 
+                ) + "\n\n" ,
+                _(
+                    "When you will done all of that just write to me `all done`" 
+                ) + "\n\n" ,
+            ]
+        )
+    elif human_response_lower in ["join", "join"]:
+        return "".join(
+            [
+                _("[](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g) ") + "\n\n", 
+                _(
+                    "Cool ! So, what to do now?" 
+                ) + "\n\n" ,
+                _(
+                    "First of all, wait to joining people to your team. Then create first video meeting to know your teammates, discuss your project and create some first issues (firts sprint)" 
+                ) + "\n\n" ,
+                _(
+                    "Also decide how often you will meet with each other, create calendar entry." 
+                ) + "\n\n" ,
+                _(
+                    "In meetings each member of team will: " 
+                ) + "\n\n" ,
+                _(
+                    "1. Tell what they did in previous week  " 
+                ) + "\n\n" ,
+                _(
+                    "2. Discuss about problems, ideas and solving problems" 
+                ) + "\n\n" ,
+                _(
+                    "3. Create issues to next sprint" 
+                ) + "\n\n" ,
+            ]
+        )
+    elif human_response_lower in ["create", "create"]:
+        return "".join(
+            [
+                _("Excellent. You choose to create to team.") + "\n\n", 
+                _(
+                    "1. If you haven't an idea to what project to do with your team go to [projects channel](#narrow/stream/7-projects) and choose a project that you like" 
+                ) + "\n\n" ,
+                _(
+                    "2. Go to [teams channel](#narrow/stream/3-teams)."
+                ) + "\n\n" ,
+                _(
+                    "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](/policies/roles)" 
+                ) + "\n\n" ,
+                _(
+                    "4. To communicate with each other you can create an group in private messages." 
+                ) + "\n\n" ,
+                _(
+                    "When you will done all of that just write to me `all done`" 
+                ) + "\n\n" ,
+                
+            ]
+        ) 
     else:
         return "".join(
             [
