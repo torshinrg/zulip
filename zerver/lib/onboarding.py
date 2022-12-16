@@ -243,13 +243,10 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
                 ) + "\n\n" ,
             ]
         )
-    elif human_response_lower in ["join", "join"]:
+    elif human_response_lower in ["all done", "alldone"]:
         return "".join(
             [
-                _("[](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g) ") + "\n\n", 
-                _(
-                    "Cool ! So, what to do now?" 
-                ) + "\n\n" ,
+                _("[Cool ! So, what to do now?](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g) ") + "\n\n",
                 _(
                     "First of all, wait to joining people to your team. Then create first video meeting to know your teammates, discuss your project and create some first issues (firts sprint)" 
                 ) + "\n\n" ,
