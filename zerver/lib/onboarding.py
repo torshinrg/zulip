@@ -79,7 +79,7 @@ def send_initial_pms(user: UserProfile) -> None:
                  _(
                     ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
                 )
-                + + "\n"
+                 + "\n"
         "\n"
        "[](/static/images/cute/exellent_profile.png)"
         "\n"
