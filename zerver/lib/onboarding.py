@@ -79,12 +79,13 @@ def send_initial_pms(user: UserProfile) -> None:
                  _(
                     ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
                 )
-                 + "\n"
+                 + "\n\n",
+                _(":three: Read info about [streams we have]({stream})") + "\n\n",
+                _(":four: :warning: Please support us on [boosty]({boosty})")
         "\n"
        "[](/static/images/cute/exellent_profile.png)"
         "\n"
         "\n",
-                 
                 _(
                     "I can also help you get set up! Just click anywhere on this message or press `r` to reply."
                 )
@@ -102,7 +103,8 @@ def send_initial_pms(user: UserProfile) -> None:
         about="/policies/about",
         privacy="/policies/privacy",
         profile="#settings/profile",
-        
+        stream="/policies/stream",
+        boosty="https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link"
     )
 
     internal_send_private_message(
@@ -254,13 +256,13 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
                     "Also decide how often you will meet with each other, create calendar entry." 
                 ) + "\n\n" ,
                 _(
-                    "In meetings each member of team will: " 
+                    "In meetings each member of team will:"
                 ) + "\n\n" ,
                 _(
-                    "1. Tell what they did in previous week  " 
+                    "1. Tell what they did in previous week"
                 ) + "\n\n" ,
                 _(
-                    "2. Discuss about problems, ideas and solving problems" 
+                    "2. Discuss ideas and participate in problems solving"
                 ) + "\n\n" ,
                 _(
                     "3. Create issues to next sprint" 

@@ -3653,11 +3653,11 @@ msgid "Hello :hello: and welcome to MakeItTogether Club!"
 msgstr "Привет :hello: и добро пожаловать в MakeItTogether Club"
 
 #: zerver/lib/onboarding.py:73
-msgid ":one: First of all, read [Privacy Policy]({privacy}) and [About]({about})!"
+msgid ":one: First of all, read [About]({about}) to know more about us!"
 msgstr ":one:  Во-первых, ознакомься c [Политикой Конфиденциальности]({privacy}) и прочитай страничку [О нас]({about})"
 
 #: zerver/lib/onboarding.py:80
-msgid ":two: Next fill up [your profile]({profile}). Example of nice profile you can see [here]({myProfile}). When you do it, just send me `profile ok`"
+msgid ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
 msgstr ":two: Теперь заполни свой [профиль]. Пример хорошо заполненного профиля ты можешь посмотреть [тут]({myProfile}). После того как заполнишь профиль, пришли мне в ответ `profile ok` "
 
 #: zerver/lib/onboarding.py:210
@@ -3665,7 +3665,7 @@ msgid ":three: Good job! Next go to [newcomers channel](#narrow/stream/4-newcome
 msgstr ":three: Отличная работа. Теперь перейди в канал [newcomers](#narrow/stream/4-newcomers)"
 
 #: zerver/lib/onboarding.py:212
-msgid "Create new topic and call it with your name  and write about yourself"
+msgid "Create new topic and call it with your name and write about yourself"
 msgstr "Создай новый топик, в названии укажи свое имя и расскажи о себе"
 
 #: zerver/lib/onboarding.py:215
@@ -3674,7 +3674,7 @@ msgstr "когда сделаешь это, пришли мне в ответ `a
 
 #: zerver/lib/onboarding.py:222
 msgid "You are awesome, my friend :smile:. And now you should to join to team or create your own team."
-msgstr "Вы замечательны, друже :smile:. Теперь ты должен решить, будешь создавать свою команду или вступишь в уже созданную команду в качестве ее участника."
+msgstr "Вы замечательны, друг :smile:. Теперь ты должен решить, будешь создавать свою команду или вступишь в уже созданную команду в качестве ее участника."
 
 #: zerver/lib/onboarding.py:225
 msgid "So, if you want to join to team send me `join` and if you want to create your own team send me `create`"
@@ -3704,13 +3704,36 @@ msgstr "2. Перейди в канал [teams](#narrow/stream/3-teams)."
 msgid "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](/policies/roles)"
 msgstr "3. Создай новый топик. Ты можешь назвать его наименованием твоего проекта. В окне сообщения опиши что за проект, пропиши роли, которые потребуются тебе для завершения проекта. Список ролей ты можешь посмотреть [тут](/policies/roles)"
 
+msgid "4. To communicate with each other you can create an group in private messages."
+msgstr "4. Чтобы поговорить друг с другом ты можешь создать группу в разделе приватных сообщений"
+
 #: zerver/lib/onboarding.py:242
 msgid "When you will done all of that just write to me `all done`"
 msgstr "Итак, когда всё это сделаешь напиши мне `all done`"
 
+#: zerver/lib/onboarding.py
+msgid "Cool ! So, what to do now?"
+msgstr "Круто, что делать теперь?"
+
+msgid "First of all, wait to joining people to your team. Then create first video meeting to know your teammates, discuss your project and create some first issues (firts sprint)"
+msgstr "Во первых, дождись, когда в твою команду придут люди. Затем создавай первую видео встречу чтобы познакомиться с членами своей команды, обсудить ваш проект и создать первый задачи"
+
+msgid "Also decide how often you will meet with each other, create calendar entry."
+msgstr "Также рещить как часто вы будете созваниваться (например, раз в неделю), создайте встречи в календаре"
+
+msgid "In meetings each member of team will:"
+msgstr "На встрече, каждый член команды:"
+
+msgid "1. Tell what they did in previous week"
+msgstr "1. Рассказывает, что он успел сделать на предыдущей неделе"
+
+msgid "2. Discuss ideas and participate in problems solving"
+msgstr "Участвует в обсуждении новых идей, решении проблем "
+
+msgid "Create issues to next sprint"
+msgstr "Создает задачи на следующую неделю"
 
 #: zerver/lib/onboarding.py:75
-#, python-brace-format
 msgid ""
 "If you are new to Zulip, check out our [Getting started "
 "guide]({getting_started_url})!"
@@ -3725,6 +3748,12 @@ msgstr "Я также могу помочь вам начать! Просто н
 #: zerver/lib/onboarding.py:83 zerver/lib/onboarding.py:191
 msgid "Here are a few messages I understand:"
 msgstr "Вот несколько сообщений, которые я понимаю:"
+
+msgid ":three: Read info about [streams we have]({stream})"
+msgstr ":three: Прочитай информацию о [каналах, которые есть в сообществе в данный момент]({streams})"
+
+msgid ":four: :warning: Please support us on [boosty]({boosty})"
+msgstr ":four: :warning: Пожалуйста поддержи нас на [boosty]({boosty})"
 
 #: zerver/lib/onboarding.py:120
 msgid ""
