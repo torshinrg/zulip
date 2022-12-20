@@ -103,7 +103,7 @@ def send_initial_pms(user: UserProfile) -> None:
         about="/policies/about",
         privacy="/policies/privacy",
         profile="#settings/profile",
-        stream="/policies/stream",
+        stream="https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90",
         boosty="https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link"
     )
 
@@ -236,7 +236,7 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
     elif human_response_lower in ["join", "join"]:
         return "".join(
             [
-                _("Excellent. You choose to join to team. So go to [teams channel](#narrow/stream/3-teams) and on search box write your role (list of role you can see [here](/policies/roles)) ") + "\n\n", 
+                _("Excellent. You choose to join to team. So go to [teams channel](#narrow/stream/3-teams) and on search box write your role (list of role you can see [here](https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)) ") + "\n\n",
                 _(
                     "Then you get a list of teams which needs in that specialists. See description and choose team which relevant to you" 
                 ) + "\n\n" ,
