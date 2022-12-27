@@ -79,17 +79,12 @@ def send_initial_pms(user: UserProfile) -> None:
                  _(
                     ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
                 )
-                 + "\n\n",
+                 + "\n\n" +  "[](/static/images/cute/exellent_profile.png)" + "\n\n",
                 _(":three: Read info about [streams we have]({stream})") + "\n\n",
-                _(":four: :warning: Please support us on [boosty]({boosty})")
-        "\n"
-       "[](/static/images/cute/exellent_profile.png)"
-        "\n"
-        "\n",
+                _(":four: :warning: Please support us on [boosty]({boosty})") ,
                 _(
                     "I can also help you get set up! Just click anywhere on this message or press `r` to reply."
-                )
-                + "\n\n",
+                )+ "\n\n",
                 _("Here are a few messages I understand:") + " ",
                 bot_commands(),
             ]
