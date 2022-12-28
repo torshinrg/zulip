@@ -72,14 +72,20 @@ def send_initial_pms(user: UserProfile) -> None:
                 welcome_msg + " ",
                 _("This is a private message from me, Welcome Bot.") + "\n\n",
                 _(
-                    "If you are new to Zulip, check out our [Getting started guide]({getting_started_url})!"
+                    ":one: First of all, read [About]({about}) to know more about us!"
                 ),
                 "{organization_setup_text}" + "\n\n",
                 "{demo_org_warning}",
                 _(
-                    "I can also help you get set up! Just click anywhere on this message or press `r` to reply."
+                    ":two: Next fill up [your profile]({profile}). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
                 )
-                + "\n\n",
+                + "\n\n" +  "[](/static/images/cute/exellent_profile.png)" + "\n\n" ,
+                _(
+                    ":three: Read info about [streams we have]({stream})"
+                ),
+                _(
+                    ":four: :warning: Please support us on [boosty]({boosty})"
+                ),
                 _("Here are a few messages I understand:") + " ",
                 bot_commands(),
             ]
@@ -90,6 +96,11 @@ def send_initial_pms(user: UserProfile) -> None:
         demo_org_warning=demo_org_warning,
         demo_org_help_url="/help/demo-organizations",
         getting_started_url="/help/getting-started-with-zulip",
+        about="/policies/about",
+        privacy="/policies/privacy",
+        profile="#settings/profile", 
+        stream="https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90",
+        boosty="https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link",
     )
 
     internal_send_private_message(
