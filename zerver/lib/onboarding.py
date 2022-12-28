@@ -81,10 +81,10 @@ def send_initial_pms(user: UserProfile) -> None:
                 )
                 + "\n\n" +  "[](/static/images/cute/exellent_profile.png)" + "\n\n" ,
                 _(
-                    ":three: Read info about [streams we have]({stream})"
+                    ":three: Read info about [streams we have](https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90)"
                 ),
                 _(
-                    ":four: :warning: Please support us on [boosty]({boosty})"
+                    ":four: :warning: Please support us on [boosty](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
                 ),
                 _("Here are a few messages I understand:") + " ",
                 bot_commands(),
@@ -98,9 +98,7 @@ def send_initial_pms(user: UserProfile) -> None:
         getting_started_url="/help/getting-started-with-zulip",
         about="/policies/about",
         privacy="/policies/privacy",
-        profile="#settings/profile", 
-        stream="https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90",
-        boosty="https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link",
+        profile="#settings/profile",
     )
 
     internal_send_private_message(
