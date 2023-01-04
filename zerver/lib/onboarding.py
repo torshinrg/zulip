@@ -77,15 +77,18 @@ def send_initial_pms(user: UserProfile) -> None:
                 "{organization_setup_text}" + "\n\n",
                 "{demo_org_warning}",
                 _(
-                    ":two: Next fill up [your profile](#settings/profile). Example of nice profile you can see below this message. When you do it, just send me `profile ok`"
+                    ":two: Next fill up [your profile](#settings/profile). Example of nice profile you can see below this message."
                 )
                 + "\n\n" +  "[](/static/images/cute/exellent_profile.png)" + "\n\n" ,
                 _(
                     ":three: Read info about [streams we have](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90)"
-                ),
+                ) + "\n\n",
                 _(
                     ":four: :warning: Please support us on [boosty](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
-                ),
+                ) + "\n\n",
+                _(
+                    ":five: When you will done all this stuff, just send me `profile ok`"
+                ) + "\n\n",
                 _("Here are a few messages I understand:") + " ",
                 bot_commands(),
             ]
