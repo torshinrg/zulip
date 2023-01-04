@@ -3752,8 +3752,8 @@ msgstr "Вот несколько сообщений, которые я пони
 msgid ":three: Read info about [streams we have]({stream})"
 msgstr ":three: Прочитай информацию о [каналах, которые есть в сообществе в данный момент]({streams})"
 
-msgid ":four: :warning: Please support us on [boosty](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
-msgstr ":four: :warning: Пожалуйста поддержи нас на [boosty]({boosty})"
+msgid ":four: :warning: Please support us on [boost](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
+msgstr ":four: :warning: Пожалуйста поддержи нас на [бусти](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
 
 #: zerver/lib/onboarding.py:120
 msgid ""
