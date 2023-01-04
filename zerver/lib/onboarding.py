@@ -84,7 +84,7 @@ def send_initial_pms(user: UserProfile) -> None:
                     ":three: Read info about [streams we have](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D0.BA.D0.B0.D0.BD.D0.B0.D0.BB.D0.BE.D0.B2/near/90)"
                 ) + "\n\n",
                 _(
-                    ":four: :warning: Please support us on [boosy](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
+                    ":four: :warning: Please support us on [boost](https://boosty.to/makeittogetherclub/purchase/1221202?ssource=DIRECT&share=subscription_link)"
                 ) + "\n\n",
                 _(
                     ":five: When you will done all this stuff, just send me `profile ok`"
