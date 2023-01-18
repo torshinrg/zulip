@@ -208,7 +208,7 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
     elif human_response_lower in ["profile ok", "profile_ok"]:
         return "".join(
             [
-                _(":three: Good job! Next go to [newcomers channel](#narrow/stream/4-newcomers)") + "\n\n",
+                _(":fire: Good job! Next go to [newcomers channel](#narrow/stream/4-newcomers)") + "\n\n",
                 _(
                     "Create new topic and call it with your name and write about yourself" 
                 ) + "\n\n" ,
@@ -274,7 +274,7 @@ def select_welcome_bot_response(human_response_lower: str) -> str:
                     "2. Go to [teams channel](#narrow/stream/3-teams)."
                 ) + "\n\n" ,
                 _(
-                    "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](/policies/roles)" 
+                    "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)"
                 ) + "\n\n" ,
                 _(
                     "4. To communicate with each other you can create an group in private messages." 

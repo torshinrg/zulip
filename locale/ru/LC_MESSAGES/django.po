@@ -1322,7 +1322,7 @@ msgstr "Вы создали новую организацию Zulip <b>%(realm_n
 #: templates/zerver/emails/followup_day1.source.html:18
 #, python-format
 msgid "You've joined the Zulip organization <b>%(realm_name)s</b>."
-msgstr "Вы подключились к организации Zulip <b>%(realm_name)s</b>."
+msgstr "Вы подключились к <b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/followup_day1.source.html:23
 #: templates/zerver/emails/followup_day1.txt:15
@@ -3682,7 +3682,7 @@ msgstr "Итак, если ты хочешь вступить в команду,
 
 #: zerver/lib/onboarding.py:232
 msgid "Excellent. You choose to join to team. So go to [teams channel](#narrow/stream/3-teams) and on search box write your role (list of role you can see [here](https://makeittogether.ru/#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)) "
-msgstr "Превосходно. Ты решил вступить в уже созданную команду. Итак, переходи в канал [teams](#narrow/stream/3-teams) и в поисковую страницу напиши свою роль (список ролей можешь посмотреть [тут]()#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)"
+msgstr "Превосходно. Ты решил вступить в уже созданную команду. Итак, переходи в канал [teams](#narrow/stream/3-teams) и в поисковую страницу напиши свою роль (список ролей можешь посмотреть [тут](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)"
 
 #: zerver/lib/onboarding.py:234
 msgid "Then you get a list of teams which needs in that specialists. See description and choose team which relevant to you"
@@ -3701,8 +3701,8 @@ msgid "2. Go to [teams channel](#narrow/stream/3-teams)."
 msgstr "2. Перейди в канал [teams](#narrow/stream/3-teams)."
 
 #: zerver/lib/onboarding.py:249
-msgid "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](/policies/roles)"
-msgstr "3. Создай новый топик. Ты можешь назвать его наименованием твоего проекта. В окне сообщения опиши что за проект, пропиши роли, которые потребуются тебе для завершения проекта. Список ролей ты можешь посмотреть [тут](/policies/roles)"
+msgid "3. Create new topic in general chanel, you can call it with name of your project. In Message box write down why you did you choose this project and mention roles which you need in your team to complete your project. List of roles you can see [here](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)"
+msgstr "3. Создай новый топик. Ты можешь назвать его наименованием твоего проекта. В окне сообщения опиши что за проект, пропиши роли, которые потребуются тебе для завершения проекта. Список ролей ты можешь посмотреть [тут](#narrow/stream/1-general/topic/.D0.A1.D0.BF.D0.B8.D1.81.D0.BE.D0.BA.20.D1.80.D0.BE.D0.BB.D0.B5.D0.B9/near/88)"
 
 msgid "4. To communicate with each other you can create an group in private messages."
 msgstr "4. Чтобы поговорить друг с другом ты можешь создать группу в разделе приватных сообщений"
@@ -3712,14 +3712,14 @@ msgid "When you will done all of that just write to me `all done`"
 msgstr "Итак, когда всё это сделаешь напиши мне `all done`"
 
 #: zerver/lib/onboarding.py
-msgid "[Cool ! So, what to do now?](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g)"
+msgid "[Cool ! So, what to do now?](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g) "
 msgstr "[Круто, что делать теперь?](https://media0.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif?cid=e54532916d4wqwpgqrthxhsozdg6r2bj6oaa3tjde806lezt&rid=giphy.gif&ct=g)"
 
 msgid "First of all, wait to joining people to your team. Then create first video meeting to know your teammates, discuss your project and create some first issues (firts sprint)"
 msgstr "Во первых, дождись, когда в твою команду придут люди. Затем создавай первую видео встречу чтобы познакомиться с членами своей команды, обсудить ваш проект и создать первый задачи"
 
 msgid "Also decide how often you will meet with each other, create calendar entry."
-msgstr "Также рещить как часто вы будете созваниваться (например, раз в неделю), создайте встречи в календаре"
+msgstr "Также решить как часто вы будете созваниваться (например, раз в неделю), создайте встречи в календаре"
 
 msgid "In meetings each member of team will:"
 msgstr "На встрече, каждый член команды:"
@@ -3730,8 +3730,8 @@ msgstr "1. Рассказывает, что он успел сделать на 
 msgid "2. Discuss ideas and participate in problems solving"
 msgstr "2. Участвует в обсуждении новых идей, решении проблем "
 
-msgid "Create issues to next sprint"
-msgstr "Создает задачи на следующую неделю"
+msgid "3. Create issues to next sprint"
+msgstr "3. Создает задачи на следующую неделю"
 
 #: zerver/lib/onboarding.py:75
 msgid ""
@@ -3763,6 +3763,9 @@ msgstr "Вы можете [скачать](/apps) [мобильные и нас�
 
 msgid ":five: When you will done all this stuff, just send me `profile ok`"
 msgstr ":five: Когда будешь готов идти дальше, пришли мне в сообщении текст `profile ok`"
+
+msgid ":fire: Good job! Next go to [newcomers channel](#narrow/stream/4-newcomers)"
+msgstr ":fire: Отличная работа, теперь перейди в канал [newcomers](#narrow/stream/4-newcomers)"
 
 #: zerver/lib/onboarding.py:125
 msgid ""
